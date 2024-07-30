@@ -1,6 +1,5 @@
 "use client"
 import { showForm } from "@/Data/store/features/Task-Form/taskFormSLice";
-import { RootState } from "@/Data/store/store";
 import {
   addIcons,
   analyticsICon,
@@ -40,11 +39,13 @@ const Sidebar = () => {
 
   
   return (
-    <div className="h-screen p-5 bg-white flex flex-col">
+    <div className="h-screen p-4 min-w-min bg-white flex flex-col">
       <div className="flex flex-col">
         <div className="flex items-center gap-x-3">
-          <Image src={profileIcon} alt="profile" className="w-8 h-8" />
-          <h4 className="text-xl font-medium">{name || "Hello Guest"}</h4>
+          <div className="w-7 h-7 rounded-2xl bg-blue-700 text-white text-lg text-center">
+            {name[0]}
+          </div>
+          <h4 className="text-base font-medium">{name || "Hello Guest"}</h4>
         </div>
         <div className="flex justify-between items-center mt-3">
           <div className="flex gap-3">
@@ -55,7 +56,7 @@ const Sidebar = () => {
           <button 
           onClick={handleLogout}
           className="bg-[#F4F4F4] w-20 h-12 rounded-lg p-2">
-            <p className="text-gray-500 hover:text-zinc-900 text-lg font-normal">
+            <p className="text-gray-500 hover:text-zinc-900 text-base font-normal">
               Logout
             </p>
           </button>

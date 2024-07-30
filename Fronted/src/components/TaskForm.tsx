@@ -105,7 +105,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ isVisible, onClose, task,defaultSta
       }`}
       style={{ width: "40%" }}
     >
-      <div className="p-4">
+      <div className="p-2">
         <div className="flex justify-between">
           <div className="flex gap-x-4">
             <button onClick={closeEvent}>
@@ -121,7 +121,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ isVisible, onClose, task,defaultSta
           </div>
         </div>
         <form onSubmit={handleSubmit}>
-          <div className="flex flex-col mt-12 ">
+          <div className="flex flex-col mt-2  ">
             <input
               type="text"
               placeholder="Title"
@@ -129,9 +129,9 @@ const TaskForm: React.FC<TaskFormProps> = ({ isVisible, onClose, task,defaultSta
               name="title"
               value={formState.title}
               onChange={handleChange}
-              className="text-5xl font-semibold text-gray-500 outline-none"
+              className="text-3xl font-semibold text-gray-500 outline-none px-2"
             />
-            <div className="mt-8 flex flex-col gap-y-10">
+            <div className=" flex flex-col gap-y-6 py-4">
               <div className="flex gap-x-36">
                 <HandyComp
                   content="Status"
@@ -165,7 +165,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ isVisible, onClose, task,defaultSta
                   value={formState.priority}
                   onChange={handleChange}
                   name="priority"
-                  className="font-normal text-base w-32 h-6  rounded-md ml-11"
+                  className="font-normal text-base w-32 h-6 rounded-md ml-11"
                 >
                   <option value="Not selected" disabled>
                     Not selected
@@ -209,13 +209,13 @@ const TaskForm: React.FC<TaskFormProps> = ({ isVisible, onClose, task,defaultSta
               </div>
             </div>
           </div>
-          <div className='flex justify-around space-x-4 mt-12'>
+          <div className='flex justify-around space-x-4 mt-3'>
            
           {task && task._id && (
               <button
                 type='button'
                 onClick={handleDelete}
-                className='bg-red-500 text-white p-2 rounded'
+                className='bg-red-500 text-white p-2 h-9 rounded w-min'
               >
                 Delete
               </button>

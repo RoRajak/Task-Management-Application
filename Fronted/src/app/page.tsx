@@ -15,7 +15,7 @@ export default function Home() {
     }
   }, [router]);
   return (
-    <main className="grid grid-cols-[20%_80%]  min-h-screen" >
+    <main className="grid grid-cols-[20%_80%] w-fit" >
       <Sidebar />
       <Dashboards/>
     </main>

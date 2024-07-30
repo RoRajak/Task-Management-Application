@@ -10,8 +10,8 @@ type props={
 function HandyComp({ content, icon, width,flexDirection }:props) {
   return (
     <button>
-      <div className={`w-[${width}] flex m-1 items-center justify-center gap-x-4 ${flexDirection}`}>
-        <h5 className="text-base font-normal text-gray-500" >{content}</h5>
+      <div className={`w-[${width}] flex m-1 items-center justify-center gap-x-2 ${flexDirection}`}>
+        <h5 className="text-sm font-normal text-gray-500" >{content}</h5>
         <Image src={icon} alt="icon"/>
       </div>
     </button>

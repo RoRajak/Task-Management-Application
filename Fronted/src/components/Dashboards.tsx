@@ -190,9 +190,9 @@ const Dashboards: React.FC = () => {
 
   return (
     <DragDropContext onDragEnd={onDragEnd}>
-      <div className="h-screen flex flex-col bg-gray-100 p-2">
-        <div className="flex justify-between items-center ml-4 mt-6">
-          <h1 className="text-5xl font-semibold">
+      <div className="h-screen  flex flex-col bg-gray-100 p-1 gap-y-6">
+        <div className="flex justify-between items-center ml-2 pt-2 ">
+          <h1 className="text-4xl font-semibold">
             {greeting},{firstName}!
           </h1>
           <div className="flex gap-x-3 items-center mr-4">
@@ -202,7 +202,7 @@ const Dashboards: React.FC = () => {
             <Image src={questionIcon} alt="question mark" />
           </div>
         </div>
-        <div className="grid grid-cols-3 ml-4 mt-6">
+        <div className="grid grid-cols-3 ml-2 ">
           {aboutContent.map((value, i) => (
             <About
               key={i}
@@ -212,45 +212,45 @@ const Dashboards: React.FC = () => {
             />
           ))}
         </div>
-        <div className="flex justify-between ml-4 mt-6">
+        <div className="flex justify-between ml-2 ">
           <div className="flex items-center h-10 rounded-lg bg-white border-solid">
             <input
               placeholder="Search"
-              className="outline-none text-gray-500 w-40 p-2"
+              className="outline-none text-gray-500 w-36 p-1"
             />
             <Image src={searchIcon} alt="search" className="p-2 w-10" />
           </div>
-          <div className="flex space-x-3 items-center mr-8">
+          <div className="flex space-x-2 items-center mr-8">
             <HandyComp
               content="Calendar view"
               icon={calenderIcon}
-              width="162px"
+              width="155px"
             />
             <HandyComp
               content="Automation"
               icon={auomationIcon}
-              width="141px"
+              width="140px"
             />
             <HandyComp content="Filter" icon={filterIcon} width="92px" />
             <HandyComp content="Share" icon={shareIconM} width="98px" />
             <button
               onClick={() => dispatchServer(showForm())}
-              className="linear-btn-color2 p-2 text-white rounded-md flex items-center justify-center font-medium "
+              className="linear-btn-color2 p-1 text-white rounded-md flex items-center justify-center font-medium "
             >
               Create new
               <Image src={addIcons} alt="add icons" className="ml-2" />
             </button>
           </div>
         </div>
-        <div className="overflow-y-auto h-full mt-6 ml-4 mr-8">
-          <div className="grid grid-cols-4 gap-6 bg-white ">
+        <div className="overflow-y-auto h-[570px] mt-6  mr-4">
+          <div className="grid grid-cols-4 gap-4 bg-white ">
             {Object.entries(columns).map(([columnId, tasks], columnIndex) => (
               <Droppable key={columnId} droppableId={columnId}>
                 {(provided) => (
                   <div
                     ref={provided.innerRef}
                     {...provided.droppableProps}
-                    className="flex flex-col col-span-1 gap-x-4"
+                    className="flex flex-col  gap-x-4"
                   >
                     <div className="flex justify-between m-2">
                       <h4 className="text-xl font-normal text-gray-500">
@@ -287,7 +287,7 @@ const Dashboards: React.FC = () => {
                     {provided.placeholder}
                     <button
                       onClick={() => handleAddNewClick(columnId)}
-                      className="bg-black text-white p-4 rounded-md w-full flex justify-between mt-4 "
+                      className="bg-black text-white p-2 rounded-md w-full flex justify-between mt-2 "
                     >
                       Add new
                       <Image src={plusIcon} alt="icons" />

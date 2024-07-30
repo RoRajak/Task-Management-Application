@@ -40,9 +40,9 @@ function page() {
   }
   
   return (
-    <div className="gradient-color-bg ">
+    <div className="gradient-color-bg w-auto h-auto ">
       <div className="flex items-center justify-center min-h-screen">
-      <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-full text-center">
+      <div className="bg-white p-8 rounded-lg shadow-lg max-w-md w-auto h-auto text-center">
         <h1 className="text-2xl font-bold mb-6">
           Welcome to <span className="text-purple-600">Workflow!</span>
         </h1>

@@ -1,11 +1,10 @@
-import  addIcon from '../../public/addicon.png'
+import  addIcon from '../../public/addIcon.svg'
 import  analytics from '../../public/analytics.svg'
 import  arrow from '../../public/arrow.svg'
 import  bell from '../../public/bellIcon.svg'
 import  boards from '../../public/boards.svg'
 import  home from '../../public/home.png'
 import  mood from '../../public/mood.svg'
-import  profile from '../../public/profile.png'
 import  team from '../../public/team.svg'
 import  setting from '../../public/setting.svg'
 import  download from '../../public/download.svg'
@@ -35,7 +34,6 @@ export const bellIcon=bell;
 export const boardsIcon=boards;
 export const homeIcon=home;
 export const moodIcon=mood;
-export const profileIcon=profile;
 export const teamIcon=team;
 export const settingIcon=setting;
 export const downloadIcon=download;
