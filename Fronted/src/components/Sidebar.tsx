@@ -9,7 +9,6 @@ import {
   downloadIcon,
   homeIcon,
   moodIcon,
-  profileIcon,
   settingIcon,
   teamIcon,
 } from "@/utils";
