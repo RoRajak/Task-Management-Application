@@ -8,7 +8,7 @@ const useAuth = () => {
   useEffect(() => {
     const checkSession = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/check-session', {
+        const response = await fetch('https://task-management-application-vj6i.onrender.com/api/check-session', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',

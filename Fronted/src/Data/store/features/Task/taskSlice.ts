@@ -26,7 +26,7 @@ interface TaskState {
 export const addTask = createAsyncThunk<Task ,Task>(
   "tasks/addTask",
   async (taskData) => {
-    const response = await fetch("http://localhost:5000/todo/create-todo", {
+    const response = await fetch("https://task-management-application-vj6i.onrender.com/todo/create-todo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ export const addTask = createAsyncThunk<Task ,Task>(
 export const updateTask = createAsyncThunk<Task, Task>(
   "tasks/updateTask",
   async (taskData) => {
-    const response = await fetch(`http://localhost:5000/todo/update/${taskData._id}`, {
+    const response = await fetch(`https://task-management-application-vj6i.onrender.com/todo/update/${taskData._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

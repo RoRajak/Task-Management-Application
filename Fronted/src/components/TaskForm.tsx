@@ -65,7 +65,7 @@ const TaskForm: React.FC<TaskFormProps> = ({ isVisible, onClose, task,defaultSta
   const handleDelete = async () => {
     if (task) {
       try {
-        await fetch(`http://localhost:5000/todo/delete-todo/${task._id}`, {
+        await fetch(`https://task-management-application-vj6i.onrender.com/todo/delete-todo/${task._id}`, {
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

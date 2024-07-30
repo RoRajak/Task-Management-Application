@@ -118,7 +118,7 @@ const Dashboards: React.FC = () => {
 
   const fetchTasks = useCallback(async () => {
     try {
-      const response = await axios.get("http://localhost:5000/todo/all-todo", {
+      const response = await axios.get("https://task-management-application-vj6i.onrender.com/todo/all-todo", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
