@@ -57,13 +57,13 @@ To run this project, you will need to add the following environment variables to
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://link-to-project](https://github.com/RoRajak/task-management-application.git
 ```
 
 Go to the project directory for client
 
 ```bash
-  cd client
+  cd Backend
 ```
 
 Install dependencies
@@ -82,7 +82,7 @@ Start the server
 Go to the project directory for server
 
 ```bash
-  cd server
+  cd Fronted
 ```
 
 Install dependencies
