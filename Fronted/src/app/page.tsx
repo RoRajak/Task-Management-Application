@@ -13,11 +13,11 @@ export default function Home() {
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
-     // router.push("/signin");
+     router.push("/signin");
     } else {
       setLoading(false);
     }
-  }, []);
+  }, [router]);
 
   if (loading) {
     return (
